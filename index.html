@@ -1,11 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio van Niels</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="/tailwind/tailwind.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
 </head>
-<body>
-    Hallo
+
+<body id="vanta-bg" class="text-zinc-300 font-sans selection:bg-red-600 selection:text-white">
+
+    <nav class="bg-black sticky top-0 z-10 border-b border-zinc-800 py-6">
+        <div class="max-w-5xl mx-auto px-6 flex justify-between items-center">
+            <div class="text-white font-bold text-xl tracking-tighter">
+                NIELS DE BRUIN
+            </div>
+            <ul class="flex space-x-8 text-sm font-medium tracking-wide">
+                <li><a href="#home" class="hover:text-red-500 transition-colors">HOME</a></li>
+                <li><a href="#projects" class="hover:text-red-500 transition-colors">PROJECTEN</a></li>
+                <li><a href="#contact" class="hover:text-red-500 transition-colors">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="home" class="bg-zinc-950/80 rounded-xl mt-16 max-w-6xl mx-auto px-12 pb-12 pt-12 md:pt-12 mb-24">
+        <h1 class="flex flex-row justify-between items-center text-3xl md:text-5xl font-bold text-white leading-tight">
+            <div class="flex flex-col">
+                <span class="text-white">NIELS DE BRUIN</span>
+                <span class="text-red-600">SOFTWARE DEVELOPER</span>
+                <p class="mt-8 font-normal text-lg text-zinc-400 w-auto leading-relaxed">
+            Ik bouw websites en applicaties die niet alleen functioneel zijn, maar ook een naadloze gebruikerservaring
+            bieden. Mijn passie ligt in het creëren van digitale producten die zowel esthetisch als technisch uitmuntend
+            zijn.
+        </p>
+            </div>
+            <img class="w-96 h-auto rounded-full" src="images/Niels.jpeg"/>
+        </h1>
+        <div class="mt-10">
+            <a href="#projects"
+                class="rounded-lg inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 transition-all uppercase text-xs tracking-widest">
+                Bekijk mijn werk
+            </a>
+        </div>
+    </header>
+
+    <section id="projects" class="max-w-6xl mx-auto px-16 rounded-xl bg-zinc-950/80 py-20 mb-24">
+        <h2 class="text-lg font-bold text-red-600 uppercase tracking-[0.3em] mb-12">MIJN PROJECTEN</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="group bg-zinc-800 rounded-xl">
+                <div
+                    class="aspect-video bg-zinc-900 border border-zinc-800 rounded-t-xl group-hover:border-red-600 transition-colors overflow-hidden">
+                    <a href="/Goede_doel/Goededoel.html"
+                        class="w-full h-full flex items-center justify-center text-zinc-700 font-mono italic">
+                        <img src="/images/Aids.jpg" alt="Aids Project" class="w-full p-4 hover:scale-105 transition-transform" />
+                    </a>
+                </div>
+                <div class="pt-6 px-6">
+                    <h3 class="mt-6 text-white text-xl font-semibold">Goede doel</h3>
+                    <p class="text-zinc-500 mt-2 text-sm">Project voor het goede doel</p>
+                    <a href="/Goede_doel/Goededoel.html"
+                    class="mt-4 rounded-lg inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 transition-all uppercase text-xs tracking-widest mb-6">
+                    Bekijk project
+                </a>
+                </div>
+            </div>
+
+            <div class="group bg-zinc-800 rounded-xl">
+                <div
+                    class="aspect-video bg-zinc-900 border border-zinc-800 rounded-t-xl group-hover:border-red-600 transition-colors overflow-hidden">
+                    <a href="/Craft/home.html"
+                        class="w-full h-full flex items-center justify-center text-zinc-700 font-mono italic">
+                        <img src="/images/Gamecraft.jpeg" alt="Gamecraft Project" class="w-full p-4 hover:scale-105 transition-transform" />
+                    </a>
+                </div>
+                <div class="pt-6 px-6">
+                    <h3 class="mt-6 text-white text-xl font-semibold">Gamecraft</h3>
+                    <p class="text-zinc-500 mt-2 text-sm">Project voor het bedrijf Gamecraft</p>
+                    <a href="/Craft/home.html"
+                    class="mt-4 rounded-lg inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 transition-all uppercase text-xs tracking-widest mb-6">
+                    Bekijk project
+                </a>
+                </div>
+            </div>
+
+            <div class="group bg-zinc-800 rounded-xl">
+                <div
+                    class="aspect-video bg-zinc-900 border border-zinc-800 rounded-t-xl group-hover:border-red-600 transition-colors overflow-hidden">
+                    <a href="/Yard/index.html"
+                        class="w-full h-full flex items-center justify-center text-zinc-700 font-mono italic">
+                        <img src="/images/yard.png" alt="Yard Project" class="w-full p-4 hover:scale-105 transition-transform" />
+                    </a>
+                </div>
+                <div class="pt-6 px-6">
+                    <h3 class="mt-6 text-white text-xl font-semibold">Yard</h3>
+                    <p class="text-zinc-500 mt-2 text-sm">Project voor het bedrijf Yard</p>
+                    <a href="/Yard/index.html"
+                    class="mt-4 rounded-lg inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 transition-all uppercase text-xs tracking-widest mb-6">
+                    Bekijk project
+                </a>
+                </div>
+            </div>
+
+            <div class="group bg-zinc-800 rounded-xl">
+                <div
+                    class="aspect-video bg-zinc-900 border border-zinc-800 rounded-t-xl group-hover:border-red-600 transition-colors overflow-hidden">
+                    <a href="/game/index.html"
+                        class="w-full h-full flex items-center justify-center text-zinc-700 font-mono italic">
+                        <img src="/images/game.jpeg" alt="Game Project" class="w-full p-4 hover:scale-105 transition-transform" />
+                    </a>
+                </div>
+                <div class="pt-6 px-6">
+                    <h3 class="mt-6 text-white text-xl font-semibold">Javascript game</h3>
+                    <p class="text-zinc-500 mt-2 text-sm">Mijn eerste JavaScript game</p>
+                    <a href="/game/index.html"
+                    class="mt-4 rounded-lg inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 transition-all uppercase text-xs tracking-widest mb-6">
+                    Bekijk project
+                </a>
+                </div>
+            </div>
+
+            <div class="group bg-zinc-800 rounded-xl">
+                <div
+                    class="aspect-video bg-zinc-900 border border-zinc-800 rounded-t-xl group-hover:border-red-600 transition-colors overflow-hidden">
+                    <a href="/Gastenboek/index.php"
+                        class="w-full h-full flex items-center justify-center text-zinc-700 font-mono italic">
+                        <img src="/images/image.png" alt="Gastenboek Project" class="w-full p-4 hover:scale-105 transition-transform" />
+                    </a>
+                </div>
+                <div class="pt-6 px-6">
+                    <h3 class="mt-6 text-white text-xl font-semibold">Gastenboek</h3>
+                    <p class="text-zinc-500 mt-2 text-sm">Mijn gastenboek</p>
+                    <a href="/Gastenboek/index.php"
+                    class="mt-4 rounded-lg inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 transition-all uppercase text-xs tracking-widest mb-6">
+                    Bekijk project
+                </a>
+                </div>
+            </div>
+
+            <div class="group bg-zinc-800 rounded-xl">
+                <div
+                    class="aspect-video bg-zinc-900 border border-zinc-800 rounded-t-xl  group-hover:border-red-600 transition-colors overflow-hidden">
+                    <a href="/E-learning/index.php"
+                        class="w-full h-full flex items-center justify-center text-zinc-700 font-mono italic">
+                        <img src="/E-learning/public/images/books.png" alt="E-learning Project" class="w-full p-4 hover:scale-105 transition-transform" />
+                    </a>
+                </div>
+                <div class="pt-6 px-6">
+                    <h3 class="mt-6 text-white text-xl font-semibold">E-learning</h3>
+                    <p class="text-zinc-500 mt-2 text-sm">Project voor bedrijf BEK</p>
+                    <a href="/E-learning/index.php"
+                    class="mt-4 rounded-lg inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 transition-all uppercase text-xs tracking-widest mb-6">
+                    Bekijk project
+                </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-zinc-950 py-16">
+        <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+            <div>
+                <h4 class="text-white font-bold mb-4">Languages</h4>
+                <ul class="text-zinc-400 space-y-2 text-sm">
+                    <li><i class='bx bxl-javascript'></i>JavaScript</li>
+                    <li class="flex flex-row items-center"><svg class="fill-zinc-400 mr-1"
+                            xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="12" height="12"
+                            viewBox="0 0 50 50">
+                            <path
+                                d="M 25 2 C 24.285156 2 23.570313 2.179688 22.933594 2.539063 L 6.089844 12.003906 C 4.800781 12.726563 4 14.082031 4 15.535156 L 4 34.464844 C 4 35.917969 4.800781 37.273438 6.089844 37.996094 L 22.933594 47.460938 C 23.570313 47.820313 24.285156 48 25 48 C 25.714844 48 26.429688 47.820313 27.066406 47.460938 L 43.910156 38 C 45.199219 37.273438 46 35.917969 46 34.464844 L 46 15.535156 C 46 14.082031 45.199219 12.726563 43.910156 12.003906 L 27.066406 2.539063 C 26.429688 2.179688 25.714844 2 25 2 Z M 25 13 C 28.78125 13 32.277344 14.753906 34.542969 17.738281 L 30.160156 20.277344 C 28.84375 18.835938 26.972656 18 25 18 C 21.140625 18 18 21.140625 18 25 C 18 28.859375 21.140625 32 25 32 C 26.972656 32 28.84375 31.164063 30.160156 29.722656 L 34.542969 32.261719 C 32.277344 35.246094 28.78125 37 25 37 C 18.382813 37 13 31.617188 13 25 C 13 18.382813 18.382813 13 25 13 Z M 35 20 L 37 20 L 37 22 L 39 22 L 39 20 L 41 20 L 41 22 L 43 22 L 43 24 L 41 24 L 41 26 L 43 26 L 43 28 L 41 28 L 41 30 L 39 30 L 39 28 L 37 28 L 37 30 L 35 30 L 35 28 L 33 28 L 33 26 L 35 26 L 35 24 L 33 24 L 33 22 L 35 22 Z M 37 24 L 37 26 L 39 26 L 39 24 Z">
+                            </path>
+                        </svg>C#</li>
+                    <li><i class='bx bxl-tailwind-css'></i>Tailwind CSS</li>
+                    <li><i class='bx bxl-php'></i>PHP</li>
+                    <li><i class='bx bx-data'></i>SQL</li>
+                </ul>
+            </div>
+            <div class="flex flex-col items-end">
+                <h4 class="text-right text-white font-bold mb-4">Ervaring</h4>
+                <p class="w-64 text-right text-zinc-400 text-sm leading-relaxed">
+                    Over 1,5 jaar van ervaring in het werken met programmeren om robuust digitale producten te leveren.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-black w-full mx-auto px-6 py-16 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-white">Neem contact op.</h2>
+        <div class="mt-8">
+            <a href="mailto:593900@edu.rocmn.nl"
+                class="text-red-600 text-xl font-medium border-b-2 border-red-600/30 hover:border-red-600 transition-all pb-1">
+                593900@edu.rocmn.nl
+            </a>
+        </div>
+        <div class="mt-16 flex justify-center space-x-6 text-xs font-bold text-zinc-500 tracking-widest uppercase">
+            <a href="#" class="hover:text-white transition-colors">GitHub</a>
+            <a href="#" class="hover:text-white transition-colors">LinkedIn</a>
+            <a href="#" class="hover:text-white transition-colors">Twitter</a>
+        </div>
+        <p class="mt-12 text-[10px] text-zinc-600 uppercase tracking-widest">
+            &copy; 2024 All Rights Reserved.
+        </p>
+    </footer>
+    <script>
+        // Initialize VANTA after the page has loaded
+
+        document.addEventListener('DOMContentLoaded', function () {
+            VANTA.NET({
+                el: "#vanta-bg",
+                mouseControls: false,
+                touchControls: false,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                color: 0xff0000,
+                backgroundColor: 0x000000,
+                maxDistance: 22.00,
+                spacing: 17.00
+            });
+        });
+
+    </script>
 </body>
+
 </html>

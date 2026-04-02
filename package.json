@@ -1,0 +1,26 @@
+{
+  "name": "l7-pro-2-e-learning-niels69420",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:css": "npx tailwindcss -i ./tailwind/styles.css -o ./tailwind/tailwind.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roc-ica-2024/l7-pro-2-e-learning-Niels69420.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roc-ica-2024/l7-pro-2-e-learning-Niels69420/issues"
+  },
+  "homepage": "https://github.com/roc-ica-2024/l7-pro-2-e-learning-Niels69420#readme",
+  "description": "",
+  "dependencies": {
+    "@fontsource/poppins": "^5.2.7",
+    "@tailwindcss/cli": "^4.1.18",
+    "tailwindcss": "^4.1.18"
+  }
+}

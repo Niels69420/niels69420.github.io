@@ -1,0 +1,154 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(90deg, #30a0f0, #c000de);
+}
+.logout-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff3b30;
+    width: auto;
+    padding: 5px 20px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.logout-btn:hover {
+    background-color: #d9342b;
+}
+
+nav{
+    background-color: #444444;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    position: sticky;
+    top: 0;
+    overflow: visible;
+    z-index: 1000;
+    
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+}
+li{
+    
+    
+    font-size: 17px;
+    list-style-type: none;
+    margin-right: 40px;
+}
+nav a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0088ff;
+    width: auto;
+    padding: 5px 20px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+nav span{
+    color: white;
+    margin-right: 10px;
+}
+
+nav a:hover{
+    background-color: #0068c3;
+    
+    transform: scale(1.15);
+    transition: all 0.1s ease;
+}
+.book{
+    height: 55px;
+    width: 60px;
+    position: absolute;
+    top: 2px;
+    left:  15px;
+
+}
+.error {
+    color: #ff0000;
+    margin-top: -15px;
+    margin-bottom: 10px;
+}
+textarea {
+    width: 95%;
+    height: 150px;
+    padding: 10px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+/* Hamburger menu button */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 20px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 426px) {
+    .hamburger {
+        display: block;
+    }
+    
+    nav {
+        justify-content: center;
+        position: sticky;
+    }
+    .book{
+        left: auto;
+        right: 5px;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #444444;
+        padding: 10px 0;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    }
+    
+    nav ul.show {
+        display: flex;
+    }
+    
+    nav li {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    nav a {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    nav span {
+        margin: 5px 0;
+    }
+    .logout-btn {
+        width: 80%;
+       margin: 0 auto;
+    }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button id="game-explanation"><a href="explain.html">Game explanation</a></button>
+  <h1>Tides of destiny</h1>
+  
+  <div id="game-container">
+    <canvas id="game-canvas" class="fite" height="620" width="1300"></canvas>
+    <div id="game-elements">
+      <div class="counter">
+      <p>Turn: <span id="turn-counter">0</span></p>
+      </div>
+      <div id="player-buttons">
+        <div class="character" id="player1">
+          <h2>Fish</h2>
+          <p>Health: <span id="player1-health">125</span>/125</p>
+          <p>Bubbles: <span id="player1-mana">10</span>/10</p>
+          <button id="attack-button-player1" disabled>Attack</button>
+          <button id="Move-selector1" disabled>Special moves</button>
+          <button id="whirlpool1" class="hidden" disabled>Whirlpool</button>
+          <button id="combo1" class="hidden" disabled>Combo attack</button>
+          <button id="items1"disabled>Items: <span id="items">3</span></button>
+          <button id="defend-button-player1" disabled>Defend</button>
+          <img id="fish-sprite" src="sprites/FISH.jpeg" alt="Player 1 Sprite" class="hidden">
+        </div>
+        
+        <div class="character" id="player2">
+          <h2>Salmon</h2>
+          <p>Health: <span id="player2-health">150</span>/150</p>
+          <p>Bubbles: <span id="player2-mana">12</span>/12</p>
+          <button id="attack-button-player2" disabled>Attack</button>
+          <button id="Move-selector2" disabled>Special moves</button>
+          <button id="whirlpool2" class="hidden" disabled>Whirlpool</button>
+          <button id="combo2" class="hidden" disabled>Combo attack</button>
+          <button id="items2"disabled>Items: <span id="items">3</span></button>
+          <button id="defend-button-player2" disabled>Defend</button>
+          <img id="salmon-sprite" src="sprites/salmon.jpeg" alt="Player 2 Sprite" class="hidden">
+        </div>
+      </div>
+      
+      <div id="enemy-healthbar">
+        <div class="character" id="enemy">
+          <h2>Enemy</h2>
+          <p>Health: <span id="enemy-health"></span></p>
+        </div>
+      </div>
+      
+      <div id="character-select">
+        <label for="enemy-select">Choose an enemy:</label>
+        <select id="enemy-select">
+          <option value="enemy1">Shark</option>
+          <option value="enemy2">Whale</option>
+          <option value="enemy3">Swordfish</option>
+          <option value="enemy4">Crab</option>
+        </select>
+        <button id="start-game">Start Game</button>
+      </div>
+      
+      <div id="combat-log"></div>
+    </div>
+  </div>
+  <div class="highscore">
+    <h2>Highscore</h2>
+    <p>Lowest amount of turns for Shark: <span id="lowest-turns1">No record yet</span></p>
+    <p>Lowest amount of turns for Whale: <span id="lowest-turns2">No record yet</span></p>
+    <p>Lowest amount of turns for Swordfish: <span id="lowest-turns3">No record yet</span></p>
+    <p>Lowest amount of turns for Crab: <span id="lowest-turns4">No record yet</span></p>
+  </div>
+
+  <script type="module" src="./characters.js"></script>
+  <script type="module" src="./attacks.js"></script>
+  <script type="module" src="./log.js"></script>
+  <script type="module" src="./turns.js"></script>
+  <script type="module" src="./main.js"></script>
+</body>
+</html>

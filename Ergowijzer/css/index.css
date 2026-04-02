@@ -1,0 +1,535 @@
+html {
+    scroll-behavior: smooth; /* Zorgt voor smooth scrolling */
+}
+
+body{
+   background-color: rgb(242, 242, 242);
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    display: none; /* Verbergt de scrollbar */
+}
+
+a {
+    text-decoration: none; /* Verwijdert de underline */
+    color: white; /* Zorgt ervoor dat de tekst wit is */
+}
+
+a:hover {
+    color: white; /* Optioneel: Zorgt ervoor dat de kleur wit blijft bij hover */
+}
+.frontpage img{
+    width: 100vw;
+    padding-bottom: 30px;
+}
+.frontpage_responsive{
+    display: none;
+}
+.container_ziektes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    background-color: #dadada80; /* Changed from tomato to dark shaded black */
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-bottom: 150px;
+    border-radius: 10px;
+}
+.imgziektes{
+    display: flex;
+    gap: 6vw;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+}
+.imgziektes a {
+    transition: transform 0.5s ease-in-out;
+}
+.imgziektes img{
+    width: 170px;
+    border-radius: 20px;
+    height: 160px;
+    object-fit: cover;
+    transition: opacity 0.5s ease-in-out;
+}
+.imgziektes img.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.slide-animation {
+    animation: slideAnimation 0.5s ease-in-out;
+}
+@keyframes slideAnimation {
+    0% {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.text{
+    display: flex;
+    font-family: navbar;
+    font-weight: bold;
+}
+.text2{
+    display: flex;
+    font-family: navbar;
+    font-weight: bold;
+    font-size: 140%;
+}
+.text_scrol{
+    display: flex;
+    align-items: center;
+    gap: 400px;
+    padding-bottom: 50px;
+}
+.button {
+    display: flex;
+    gap: 20px;
+}
+.white button{
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.orange button{
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.white button:hover{
+    background-color:orange;
+    cursor: pointer;
+    
+}
+.orange button:hover{
+    background-color: orange;
+    cursor: pointer;
+}
+.logo_docter1 img{
+    display: flex;
+    width: 350px;
+    transform: translateY(-30%);
+}
+.logo_docter2 img{
+    display: flex;
+    width: 350px;
+    transform: translateY(-20%);
+}
+.Review{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(250, 139, 2, 0.6);
+
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+.text p{
+    font-family: navbar;
+    font-weight: lighter;
+    font-size: 18px;
+    width: 700px;
+}
+.contact_us{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 40px;
+    background-color: rgba(250, 139, 2, 0.6);
+}
+.text_contact_us{
+    padding: 30px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.vakje{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.vakje h1{
+    font-size: 23px;
+}
+.vakje p {
+    font-size: 15px;
+    width: 400px;
+    padding-bottom: 20px;
+}
+.vakje button{
+    height: 35px;
+    width: 160px;
+    border-radius: 20px;
+    background-color: rgba(250, 139, 2, 1);
+    color: white;
+}
+.vakje_text p{
+    width: 350px;
+}
+.valkje_bold p{
+    font-weight: bolder;
+    font-size: 16px;
+}
+.footer{
+    padding: 20px;
+    background-color: black;
+}
+.container_footer{
+    display: flex;
+    font-size: 15px;
+    color: white;
+    justify-content: space-evenly;
+    margin-left: 166px;
+}
+.container_footer h1{
+    font-size: 20px;
+}
+.streep{
+    display: flex;
+    background-color: white;
+    height: 1px;
+    width: 70vw;
+}
+.box_streep{
+    display: flex;
+    justify-content: center;
+}
+.copyright{
+    display: flex;
+    padding-top: 50px;
+    color: white;
+    justify-content: center;
+}
+.logo_footer{
+  display: flex;
+  justify-content: center;
+}
+.logo_footer img{
+    display: flex;
+    width: 140px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+}
+.hidden {
+    display: none !important;
+}
+
+.title_happy_customers_says{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.reviewcard{
+    display: flex;
+    border-style: double;
+    padding: 20px;
+    width: 30vw;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.reviewcard img{
+height: 130px;
+width: 130px;
+border-radius: 50%;
+}
+.reviewcardflex{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.klantreview{
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.introtext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.introtext_kop{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.introtext_rest{
+    font-size: 12px;
+    width: 1000px;
+    margin-bottom: 150px;
+    text-align: center;
+}
+
+.quiz_section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.quizColor{
+    padding: 50px;
+    background-color: rgba(250, 139, 2, 0.6);
+    border-radius: 20px;
+}
+.quizButton{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.quizButton button{
+    background-color: black;
+    color: white;
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+}
+
+
+@media (max-width: 1051px){
+    .Review{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+    .text{
+        align-items: center;
+        transform: translateY(-10%);
+    }
+    .text p{
+        margin-left: 67px;
+    }
+    .introtext_kop{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .introtext_rest{
+        font-size: 10px;
+        width: 600px;
+        margin-bottom: 150px;
+        text-align: center;
+    }
+}
+@media (max-width: 852px){
+    .text_scrol{
+        gap: 290px;
+    }
+    .imgziektes {
+        display: flex;
+        gap: 4vw;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        margin: 0 auto;
+}
+}
+@media (max-width: 813px){
+    .contact_us{
+        display: flex;
+        flex-direction: column-reverse;
+       
+    }
+    .imgziektes{
+        gap: 0px;
+    }
+    .text_contact_us{
+        margin-bottom: 100px;
+    }
+    .text h1{
+        font-size: 20px;
+    }
+    .text p{
+        width: 390px;
+        margin: 0;
+        padding-left: 30px;
+        padding-top: 10px;
+    }
+    .text_scrol{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .responsive_hidden{
+        display: none;
+    }
+    .reviewcardflex{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+    }
+    .reviewcard{
+        width: 300px;
+    }
+
+    .footer{
+        display: flex;
+        font-size: 14px;
+        height: 880px;
+        flex-direction: column;
+        align-items: center;
+      }
+      .vijfhoek{
+        margin-left: 4px;
+      }
+      .logo_footer img{
+        width: 80px;
+        margin: 0;
+      }
+      .container_footer{
+        display: flex;
+        font-size: 16px;
+        justify-content: space-evenly;
+        
+        flex-direction: column;
+       
+      }
+      
+      .Contacten{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+      .container_footer{
+        margin: 0;
+        padding: 0;
+      }
+      .logo_docter2 img {
+        width: 290px;
+    }
+    .introtext_kop{
+        font-size: 23px;
+        margin-bottom: 20px;
+    }
+    .introtext_rest{
+        font-size: 10px;
+        width: 350px;
+        margin-bottom: 150px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px){
+    .quiz_question{
+        width: 300px; 
+    }
+    .quiz_section h2{
+        display: flex;
+        width: 300px;
+        font-size: 20px;
+    }
+    .quizColor{
+        padding: 20px;
+    }
+}
+
+@media (max-width: 548px){
+    .text_mid {
+      display: flex;
+      width: 270px;
+    }
+    .rugklachten_above_text p {
+      width: 260px;
+  }
+  .reviewcard {
+    width: 200px;
+}
+.reviewcard img {
+    border-radius: 50%;
+}
+    .text p{
+        padding: 0;
+        margin-top: 40px;
+        width: 220px;
+    }
+    .logo_docter2 img{
+        margin-bottom: 30px;
+    }
+    .title_happy_customers_says{
+        font-size: 13px;
+    }
+    
+    .vijfhoek{
+      margin-left: 4px;
+    }
+    .logo_footer img{
+      width: 80px;
+    }
+    .container_footer{
+      display: flex;
+      font-size: 16px;
+      justify-content: space-evenly;
+      flex-direction: column;
+    }
+    .text h1 {
+        font-size: 20px;
+        width: 150px;
+    }
+    .vakje h1 {
+        font-size: 23px;
+        width: 150px;
+    }
+    .vakje p {
+        width: 180px;
+    }
+    .vakje_text p{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .Contacten{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    .container_footer{
+      margin: 0;
+      padding: 0;
+    }
+    .text_contact_us{
+        padding-left: 90px;
+        padding-right: 90px;
+        transform: translateY(-20%);
+    }
+    .contact_us{
+        height: 800px;
+    }
+    .frontpage{
+        display: none;
+    }
+    .frontpage_responsive{
+        display: flex;
+        margin-bottom: 60px;
+    }
+    .frontpage_responsive img{
+        width: 100vw;
+    }
+    }
+    @media (max-width: 400px) {
+        .text_contact_us {
+            padding-left: 80px;
+            padding-right: 80px;
+            transform: translateY(-20%);
+        }
+    }

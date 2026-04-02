@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/navbar.css">
+
+
+    <title>Ergowijzer.nl</title>
+</head>
+
+<body>
+    <script src="js/cycle.js"></script>
+    <div class="container">
+        <div class="navbar">
+            <section class="navbar">
+                <nav>
+                    <div class="vijfhoek">
+                        <img src="images/Vijfhoek.png">
+                    </div>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">About us</a></li>
+                        <li><a href="#imgziektes">Course</a></li>
+                    </ul>
+                </nav>
+
+
+            </section>
+
+        </div>
+
+        <div class="frontpage">
+            <img src="images/Logo_banner.jpg">
+        </div>
+        <div class="frontpage_responsive">
+            <img src="images/Logo_banner_responsive.jpg">
+        </div>
+
+        <div class="introtext">
+            <div class="introtext_kop">
+                <h1>Ergowijzer</h1>
+            </div>
+            <div class="introtext_rest">
+                <h1>Welcome to Ergowijzer – Your Guide to a Healthy Work Posture!
+
+                    At Ergowijzer, we understand the importance of a healthy work and living environment. Prolonged
+                    sitting, improper lifting, or poor posture can lead to annoying back, neck, and joint pain. That’s
+                    why we offer ergonomic solutions that enhance your comfort and well-being.
+
+                    Whether you're looking for an ergonomic office chair, an adjustable desk, or supportive accessories,
+                    Ergowijzer helps you make the right choice. With our expert advice and carefully selected products,
+                    you can work and live healthier – every single day.
+
+                    Choose comfort, choose Ergowijzer!</h1>
+            </div>
+        </div>
+
+
+        <div class="contact_us">
+            <div class="text_contact_us">
+                <div class="vakje">
+                    <h1>Contact with the organizations</h1>
+                    <div class="vakje_text">
+                        <div class="valkje_bold">
+                            <p>Want to get in touch?</p>
+                        </div>
+                        <p>
+                            If you have any questions or would like more information, feel free to reach out to us.
+                            You can find our contact details in the footer below.</p>
+                    </div>
+                    <a href="#container_footer">
+                        <button>Contact us</button> </a>
+                </div>
+            </div>
+            <div class="logo_docter1">
+                <img src="images/Poppetje_orange.png">
+            </div>
+        </div>
+        <div class="quiz_section">
+            <h2>Test your knowledge about common complaints!</h2>
+            <form id="quizForm">
+                <div class="quizColor">
+                <div class="quiz_question">
+                    <p>1. What is a common cause of back pain?</p>
+                    <input type="radio" id="q1a1" name="q1" value="wrong">
+                    <label for="q1a1">Eating unhealthy food</label><br>
+                    <input type="radio" id="q1a2" name="q1" value="correct">
+                    <label for="q1a2">Poor posture</label><br>
+                    <input type="radio" id="q1a3" name="q1" value="wrong">
+                    <label for="q1a3">Drinking too much water</label>
+                </div>
+                <div class="quiz_question">
+                    <p>2. Which of these can help prevent neck pain?</p>
+                    <input type="radio" id="q2a1" name="q2" value="correct">
+                    <label for="q2a1">Using an ergonomic chair</label><br>
+                    <input type="radio" id="q2a2" name="q2" value="wrong">
+                    <label for="q2a2">Skipping breaks</label><br>
+                    <input type="radio" id="q2a3" name="q2" value="wrong">
+                    <label for="q2a3">Sleeping on the floor</label>
+                </div>
+                <div class="quiz_question">
+                    <p>3. What is a good way to avoid wrist pain?</p>
+                    <input type="radio" id="q3a1" name="q3" value="wrong">
+                    <label for="q3a1">Typing with one hand</label><br>
+                    <input type="radio" id="q3a2" name="q3" value="correct">
+                    <label for="q3a2">Using a wrist support</label><br>
+                    <input type="radio" id="q3a3" name="q3" value="wrong">
+                    <label for="q3a3">Ignoring the pain</label>
+                </div>
+                <div class="quiz_question">
+                    <p>4. What can help reduce eye strain while working on a computer?</p>
+                    <input type="radio" id="q4a1" name="q4" value="wrong">
+                    <label for="q4a1">Staring at the screen continuously</label><br>
+                    <input type="radio" id="q4a2" name="q4" value="correct">
+                    <label for="q4a2">Taking regular breaks</label><br>
+                    <input type="radio" id="q4a3" name="q4" value="wrong">
+                    <label for="q4a3">Working in a dark room</label>
+                </div>
+                <div class="quiz_question">
+                    <p>5. Which of these is a good practice to prevent shoulder pain?</p>
+                    <input type="radio" id="q5a1" name="q5" value="correct">
+                    <label for="q5a1">Adjusting your desk and chair height</label><br>
+                    <input type="radio" id="q5a2" name="q5" value="wrong">
+                    <label for="q5a2">Carrying heavy bags on one shoulder</label><br>
+                    <input type="radio" id="q5a3" name="q5" value="wrong">
+                    <label for="q5a3">Slouching while sitting</label>
+                </div>
+                <div class="quizButton">
+                <button type="button" onclick="checkQuiz()">Submit</button>
+                </div>
+            </div>
+            </form>
+            <div id="quizResult"></div>
+        </div>
+       
+        <div id="imgziektes"></div>
+
+        <div class="container_ziektes">
+            <div class="text_scrol">
+                <div class="text2">
+                    Follow courses
+                </div>
+                <div class="button">
+                    <div class="white">
+                        <button>
+                            < </button>
+                    </div>
+                    <div class="orange">
+                        <button>></button>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+            <div class="imgziektes">
+                <a href="klachten/rugklachten(daan).html"><img src=""></a>
+                <a href="klachten/gewrichtklachten(colin).html"><img src="" class="responsive_hidden"></a>
+                <a href="klachten/nekklachten(thijn).html"><img src="" class="responsive_hidden"></a>
+                <a href="klachten/bureau(niels).html"><img src="" class="responsive_hidden"></a>
+                <a href="klachten/gewicht(dave).html"><img src="" class="hidden"></a>
+                <a href="klachten/item(kevin).html"><img src="" class="hidden"></a>
+            </div>
+        </div>
+
+        <div class="Review">
+            <div class="logo_docter2">
+                <img src="images/L3 poppetje-2.png">
+            </div>
+            <div class="text">
+                <h1>We are the best company
+                    for your visit</h1>
+                <p>At Ergowijzer, your health and comfort come first. We offer ergonomic solutions to help prevent and
+                    relieve back, neck, and joint pain. From adjustable desks to ergonomic chairs and accessories – we
+                    help you make the right choice. Discover how you can create a healthier and more comfortable work
+                    and living environment with Ergowijzer!</p>
+            </div>
+        </div>
+
+
+
+
+        <div class="footer">
+            <div class="logo_footer">
+                <img src="images/Vijfhoek.png">
+
+            </div>
+            <div class="box_streep">
+                <div class="streep"></div>
+
+            </div>
+
+            <div class="container_footer" id="container_footer">
+                <div class="Contacten">
+                    <a href="../#imgziektes">
+                        <h1>Course</h1>
+                    </a>
+                    <a href="klachten/rugklachten(daan).html">
+                        <p>Back pain</p>
+                    </a>
+                    <a href="klachten/nekklachten(thijn).html">
+                        <p>Neck pain</p>
+                    </a>
+                    <a href="klachten/bureau(niels).html">
+                        <p>Shoulder pain</p>
+                    </a>
+                    <a href="klachten/gewrichtklachten(colin).html">
+                        <p>Wrist pain</p>
+                    </a>
+                </div>
+                <div class="Contacten">
+                    <a href="index.html">
+                        <h1>Home</h1>
+                    </a>
+                    <a href="aboutus.html">
+                        <p>About us</p>
+                    </a>
+                </div>
+                <div class="Contacten">
+                    <h1>Contacts</h1>
+                    <p>Amersfoort, ROC Midden Nederland</p>
+                    <p> +39 346 368 5708
+                    </p>
+                    <p>123456@edu.rocmn.nl</p>
+                </div>
+            </div>
+            <div class="box_streep">
+                <div class="streep"></div>
+            </div>
+            <div class="copyright">
+                Copyright © 2025. All rights reserved.
+            </div>
+        </div>
+
+</body>
+
+</html>

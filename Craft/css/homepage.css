@@ -1,0 +1,107 @@
+body{
+    background-image: url(../img/beachwater.gif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+    margin: 0;
+    font-family: 'Original Surfer';
+}
+
+#twizzle {
+  display: block;
+  position: absolute;
+  right: 50px;
+  bottom: 30px;
+  width: 35%;
+  height: 35%;
+  animation-name: twizzle;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes twizzle {
+  0%, 100%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(20px);
+  }
+
+}
+
+#title {
+  font-size: 35px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-top: 70px;
+  background-color: #f7f7f386;
+  padding: 10px;
+  border-radius: 10px;
+  width: 550px;
+}
+
+#titleflex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#makers {
+  font-size: 22px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-top: 100px;
+  background-color: #f7f7f3bf;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#makersflex {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  position: absolute;
+  bottom: 0;
+  margin: 10px;
+}
+@media only screen and (max-width: 1025px){
+  body{
+    background-size: 120%;
+  }
+  #twizzle{
+    width: 50%;
+
+  }
+}
+@media only screen and (max-width: 789px){
+  body{
+    background-size: 120%;
+  }
+  #twizzle{
+    width: 53%;
+    right: 20px;
+  }
+}
+@media only screen and (max-width: 426px){
+  body{
+    background-size: 210%;
+  }
+  #twizzle{
+    height: 140px;
+    width: 55%;
+    right: 0px;
+    bottom: 80px;
+  }
+  #makers {
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 100px;
+    background-color: #f7f7f3bf;
+    padding: 10px;
+    
+}
+#title{
+  width: 300px;
+  font-size: 25px;
+}
+}

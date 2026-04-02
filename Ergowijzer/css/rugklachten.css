@@ -1,0 +1,345 @@
+html {
+  scroll-behavior: smooth; /* Zorgt voor smooth scrolling */
+}
+
+body{
+ background-color: rgb(242, 242, 242);
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none; /* Verbergt de scrollbar */
+}
+
+a {
+  text-decoration: none; /* Verwijdert de underline */
+  color: white; /* Zorgt ervoor dat de tekst wit is */
+}
+
+a:hover {
+  color: white; /* Optioneel: Zorgt ervoor dat de kleur wit blijft bij hover */
+}
+
+.rugklachten_above img{
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.infobox_above_responsive{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  
+}
+.infobox_above_responsive img{
+  margin-top: 30px;
+  width: 400px;
+}
+.button_rugklachten button{
+    font-size: 16px;
+    height: 40px;
+    width: 160px;
+    border-radius: 20px;
+    background-color: rgba(250, 139, 2, 1);
+    color: white;
+  }
+  .infobox_above{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    
+  }
+  .rugklachten_above_text p{
+    width: 350px;
+    
+  }
+  .rugklachten_above_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .text_mid{
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    
+  }
+  .text_mid p{
+    font-size: 16px;
+    margin-top: 0px;
+  }
+  .price {
+    color: orange;
+    font-weight: bold;
+}
+  .infobox_mid{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5vw;
+    padding-bottom: 100px;
+  }
+  .icons{
+    display: flex;
+    flex-direction: column;
+    margin-top: 26px
+  }
+  .left_gallery img{
+    width: 350px;
+    border-radius: 20px;
+  }
+  .mid_gallery{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .mid_gallery img{
+    width: 150px;
+    border-radius: 20px;
+  }
+  
+  .right_gallery img{
+    width: 350px;
+    border-radius: 20px;
+  }
+  .infobox_below{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+  .infobox_below_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
+
+  .footer{
+    padding: 20px;
+    background-color: black;
+}
+.container_footer{
+    display: flex;
+    font-size: 15px;
+    color: white;
+    justify-content: space-evenly;
+    margin-left:166px;
+}
+.container_footer h1{
+    font-size: 20px;
+}
+.streep{
+    display: flex;
+    background-color: white;
+    height: 1px;
+    width: 70vw;
+}
+.box_streep{
+    display: flex;
+    justify-content: center;
+}
+.copyright{
+    display: flex;
+    padding-top: 50px;
+    color: white;
+    justify-content: center;
+}
+.logo_footer{
+  display: flex;
+  justify-content: center;
+}
+.logo_footer img{
+  display: flex;
+  width: 140px;
+  margin-bottom: 20px;
+  margin-right: 30px;
+}
+.hidden {
+    display: none;
+}
+  
+  .icon_vakje{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 10px;
+  }
+  .price_back_scratcher{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+  }
+  .product_back_scratcher{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .product_back_scratcher img{
+    justify-content: center;
+    width: 400px;
+    border-radius: 20px;
+  }
+  .button_back_scratcher{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .button_back_scratcher button{
+    font-size: 16px;
+    height: 40px;
+    width: 160px;
+    border-radius: 20px;
+    background-color: rgba(250, 139, 2, 1);
+    color: white;
+  }
+  .rugklachten_above.niels img{
+    Width: 650px;
+  }
+  .responsive_back_scratcher{
+    display: flex;
+    justify-content: space-around;
+  }
+  @media (max-width: 1025px) {
+    .responsive_back_scratcher{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+  @media (max-width: 972px) {
+    .infobox_below_text{
+      display: flex;
+      padding: 0;
+      margin: 0;
+      justify-content: center;  
+    }
+    .product_back_scratcher img{
+      width: 300px;
+    }
+    .responsive_back_scratcher{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .text_mid p {
+      display: flex;
+      align-items: center;
+    }
+    .video video{
+      height: 230px;
+      width: 400px;
+    }
+    .infobox_mid{
+      justify-content: space-evenly;
+    gap: 7vw;
+    padding-bottom: 100px;
+    flex-direction: column;
+    align-items: center;
+    }
+    .text_mid{
+      align-items: center;
+      width: 350px;
+    }
+    .infobox_above{
+      flex-direction: column;
+    align-items: center;
+    }
+    .infobox_above_responsive{
+      flex-direction: column;
+    align-items: center;
+    }
+    .rugklachten_above img{
+      width: 250px;
+      height: 250px;
+      margin-bottom: 50px;
+    }
+    .rugklachten_above_niels img{
+      width: 250px;
+      margin-bottom: 50px;
+    }
+    .left_gallery img{
+      width: 250px;
+      border-radius: 20px;
+    }
+    .mid_gallery{
+      gap: 20px;
+      flex-direction: row;
+    }
+    .mid_gallery img{
+      width: 100px;
+      border-radius: 20px;
+    }
+    .right_gallery img{
+      width: 250px;
+      border-radius: 20px;
+    }
+    .infobox_below {
+      display: flex;
+      gap: 50px;
+      justify-content: center;
+      margin-bottom: 100px;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+ 
+
+  @media (max-width: 548px){
+  .text_mid {
+    display: flex;
+    width: 270px;
+  }
+  .video video{
+    height: 200px;
+    width: 300px;
+  }
+  .product_back_scratcher img{
+    width: 200px;
+  }
+  .rugklachten_above_text p {
+    width: 260px;
+}
+  .footer{
+    display: flex;
+    font-size: 14px;
+    height: 880px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .vijfhoek{
+    margin-left: 4px;
+  }
+  .logo_footer img{
+    width: 80px;
+    margin: 0;
+  }
+  .container_footer{
+    display: flex;
+    font-size: 16px;
+    justify-content: space-evenly;
+    
+    flex-direction: column;
+   
+  }
+  
+  .Contacten{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .container_footer{
+    margin: 0;
+    padding: 0;
+  }
+  }

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Onze Games</title>
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/game.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="center_nav_container">
+          
+          <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="Gamecraft.html">Gamecraft</a></li>
+            <li><a href="Gameuitleg.html">Game uitleg</a></li>
+            <li><a href="game.html">Onze games</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="menu-icon" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+      </div>
+  </nav>
+
+  <script>
+      function toggleMenu() {
+          const navLinks = document.querySelector('.nav-links');
+          navLinks.classList.toggle('active');
+      }
+      
+  </script>
+  <script src="https://kit.fontawesome.com/85c769f0cc.js" crossorigin="anonymous"></script>
+    <img src="img/Diver.jpeg" id="gamecraft-img" />
+    <h1>Onze Games</h1>
+    <div id="boxalignment">
+      <div class="boxes">
+        <p class="bij">Tides of destiny: Two fins unite</p>
+        <img id="logobij" src="img/Tidal.jpeg" alt="" />
+        <p class="info">Versla vijanden in turn-based combat.</p>
+      </div>
+
+      <div class="boxes">
+        <p class="jump">Jump Divers</p>
+        <img id="logodiver" src="img/logodiver.jpg" alt="" />
+        <p class="info">
+          Je springt op platformen onderwater om naar het einde te gaan.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

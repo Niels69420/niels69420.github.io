@@ -1,0 +1,118 @@
+
+.flexbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.error {
+    color: #ff0000;
+    display: block;
+    margin-top: -15px;
+    margin-bottom: 10px;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.bluebox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00a6b5;
+    margin-top: 35px;
+    margin-bottom: 30px;
+    width: 20%;
+    height: 18%;
+    border-radius: 15px;
+}
+.bluebox > h1{
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+}
+.blue_small{
+    background-color: #257AFF;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+
+}
+.blue_small:hover{
+    background-color: #0060c6;
+    transform: scale(1.1);
+    transition: all 0.1s ease;
+    cursor: pointer;
+}
+.greybox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #00000051;
+    border-radius: 7px;
+    padding: 20px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    height: 22%;
+    
+}
+.greybox-first{
+    width: 45%;
+}
+.greybox-second{
+    padding: 20px 30px;
+}
+
+.infobox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #257AFF;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+a{
+    color: white;
+    text-decoration: none;
+    
+}
+.bluebox-signup{
+    margin-bottom: 60px;
+}
+.input_box{
+    width: 98%;
+    height: 30px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.infobox:hover{
+    background-color: #0060c6;
+    transform: scale(1.1);
+    transition: all 0.1s ease;
+}
+@media screen and (max-width: 426px) {
+    .bluebox{
+        width: 80%;
+        height: 20%;
+    }
+    .greybox-first{
+        width: 80%;
+    }
+    .infobox{
+        font-size: 20px;
+    }
+
+}
